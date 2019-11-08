@@ -20,12 +20,14 @@ function configureStoreProd(initialState) {
     sagaMiddleware,
 
   ];
-  sagaMiddleware.run(rootSaga);
-  return createStore(
+  const store = createStore(
     createRootReducer(history),
     initialState,
     compose(applyMiddleware(...middlewares))
   );
+  sagaMiddleware.run(rootSaga);
+
+  return store;
 }
 
 function configureStoreDev(initialState) {
@@ -36,7 +38,7 @@ function configureStoreDev(initialState) {
     sagaMiddleware,
   ];
 
-  const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+  const composeEnhancers = compose;
   const store = createStore(
     createRootReducer(history),
     initialState,
