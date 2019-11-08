@@ -1,0 +1,19 @@
+/* Variables */
+$brand-blue: #5bb7db;
+
+@import "admin";
+
+html, body, #app {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    margin: 0;
+    background: rgb(246,246,246);
+    background: linear-gradient(130deg, rgba(246,246,246,1) 0%, rgba(238,238,238,1) 28%, rgba(207,207,207,1) 100%);
+}
+
