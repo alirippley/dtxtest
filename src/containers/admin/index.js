@@ -28,7 +28,7 @@ Main.propTypes = {
   authenticated: PropTypes.bool,
   actions: PropTypes.shape({
     initializeApplication: PropTypes.func,
-    authenticated: PropTypes.func
+    authenticate: PropTypes.func
   })
 };
 
