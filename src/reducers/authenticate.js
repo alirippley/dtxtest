@@ -9,7 +9,16 @@ export function admin(state = false, action) {
       return state;
   }
 }
+export function user(state = false, action) {
+  switch (action.type) {
+    case "AUTH":
+        return action.payload && action.payload.name === 'ally';
+    default:
+      return state;
+  }
+}
 
 export default combineReducers({
-    admin
+    admin,
+    user
 });
