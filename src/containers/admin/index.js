@@ -25,8 +25,10 @@ export class Main extends Component {
 }
 
 Main.propTypes = {
+  authenticated: PropTypes.bool,
   actions: PropTypes.shape({
-    initializeApplication: PropTypes.func
+    initializeApplication: PropTypes.func,
+    authenticated: PropTypes.func
   })
 };
 

@@ -4,6 +4,7 @@ export function admin(state = false, action) {
   switch (action.type) {
     case "AUTH":
         if (action.payload.name === 'ally' && action.payload.password === 'ally') return true;
+        break;  
     default:
       return state;
   }
@@ -11,5 +12,4 @@ export function admin(state = false, action) {
 
 export default combineReducers({
     admin
-  //   fuelSavings,
-  });
+});

@@ -38,9 +38,7 @@ class LoginForm extends Component {
 
 
 LoginForm.propTypes = {
-  actions: PropTypes.shape({
-    initializeApplication: PropTypes.func
-  })
+  authenticate: PropTypes.func
 };
 
 function mapStateToProps() {
