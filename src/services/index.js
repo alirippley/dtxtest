@@ -6,7 +6,7 @@ export function test() {
     method: 'post',
     url: 'http://node-express-env.w3dt9tmpjw.us-east-2.elasticbeanstalk.com/signup',
     headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Type': 'application/json',
       'X-Requested-With': 'XMLHttpRequest'
     },
     data: {
