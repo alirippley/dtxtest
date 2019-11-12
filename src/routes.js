@@ -1,11 +1,6 @@
-// import { Fragment } from 'react';
 import { Route, Switch } from "react-router-dom";
-
 import SinglePage from "./containers";
 import Admin from "./containers/admin";
-// import FuelSavingsPage from "./containers/FuelSavingsPage";
-// import HomePage from "./HomePage";
-// import NotFoundPage from "./NotFoundPage";
 import PropTypes from "prop-types";
 import React from "react";
 import { hot } from "react-hot-loader";
@@ -23,7 +18,7 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  children: PropTypes.element
+  children: PropTypes.element;
 };
 
 export default hot(module)(App);
