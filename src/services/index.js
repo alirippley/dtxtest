@@ -1,8 +1,8 @@
-  import axios from 'axios'
+import axios from 'axios'
 
 
-// Send a POST request
-export const test = () => axios({
+export function test() {
+  return axios.request({
     method: 'post',
     url: 'http://node-express-env.w3dt9tmpjw.us-east-2.elasticbeanstalk.com/',
     data: {
@@ -16,3 +16,4 @@ export const test = () => axios({
   }, (error) => {
     console.log(error);
   });
+}
